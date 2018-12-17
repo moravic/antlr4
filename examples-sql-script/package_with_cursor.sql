@@ -1,7 +1,7 @@
 create or replace package pkgtest is
 
     cursor cuData is
-        select department_id, department_name from department;
+        select department_id, department_name, department_no from department;
 
     procedure main;
 end;

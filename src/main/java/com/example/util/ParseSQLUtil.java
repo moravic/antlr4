@@ -97,7 +97,7 @@ public class ParseSQLUtil {
 
             methodListener.invoke(treeListener, "create table t as select serio, 50 from dual");
 */
-            final Method methodSelectStatement = parserClass.getMethod("sql_script");
+            final Method methodSelectStatement = parserClass.getMethod(entryPoint       );
             ParserRuleContext parserRuleContext2 = (ParserRuleContext) methodSelectStatement.invoke(parser);
 
             ParseTreeWalker walker = new ParseTreeWalker();
